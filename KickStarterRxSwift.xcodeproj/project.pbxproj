@@ -15,6 +15,7 @@
 		88E8B9471F0A4F5A002F1D3F /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B9461F0A4F5A002F1D3F /* RootTabBarViewController.swift */; };
 		88E8B94A1F0A4FA1002F1D3F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B9491F0A4FA1002F1D3F /* SignupViewController.swift */; };
 		88E8B94F1F0A502B002F1D3F /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B94E1F0A502B002F1D3F /* SignupViewModel.swift */; };
+		88E8B9511F0A575B002F1D3F /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E8B9501F0A575B002F1D3F /* Authentication.storyboard */; };
 		EAE2E798922ADF7318B31E3E /* Pods_KickStarterRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA321D1D02D2F5A794BFB537 /* Pods_KickStarterRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		88E8B9461F0A4F5A002F1D3F /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		88E8B9491F0A4FA1002F1D3F /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		88E8B94E1F0A502B002F1D3F /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewModel.swift; path = ../../../../../../Documents/SignupViewModel.swift; sourceTree = "<group>"; };
+		88E8B9501F0A575B002F1D3F /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		D8BB36B8E0B9DA289AD12CEA /* Pods-KickStarterRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickStarterRxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KickStarterRxSwift/Pods-KickStarterRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DA321D1D02D2F5A794BFB537 /* Pods_KickStarterRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KickStarterRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 			children = (
 				88E8B9401F0A4EE9002F1D3F /* LaunchScreen.storyboard */,
 				88E8B9411F0A4EE9002F1D3F /* Main.storyboard */,
+				88E8B9501F0A575B002F1D3F /* Authentication.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E8B9511F0A575B002F1D3F /* Authentication.storyboard in Resources */,
 				88E8B9431F0A4EE9002F1D3F /* Main.storyboard in Resources */,
 				88E8B9321F0A3FD5002F1D3F /* Assets.xcassets in Resources */,
 				88E8B9421F0A4EE9002F1D3F /* LaunchScreen.storyboard in Resources */,

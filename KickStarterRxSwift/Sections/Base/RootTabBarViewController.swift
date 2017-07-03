@@ -8,6 +8,6 @@
 
 import UIKit
 
-public final class RootTabBarViewController: UITabBarViewController {
+public final class RootTabBarViewController: UITabBarController {
 
 }
