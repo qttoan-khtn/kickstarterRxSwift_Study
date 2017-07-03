@@ -278,3 +278,49 @@ Pods/Target Support Files/RxSwift/RxSwift-prefix.pch
 Pods/Target Support Files/RxSwift/RxSwift-umbrella.h
 Pods/Target Support Files/RxSwift/RxSwift.modulemap
 Pods/Target Support Files/RxSwift/RxSwift.xcconfig
+Pods/Argo/LICENSE
+Pods/Argo/README.md
+Pods/Argo/Sources/Argo/Extensions/Dictionary.swift
+Pods/Argo/Sources/Argo/Extensions/NSNumber.swift
+Pods/Argo/Sources/Argo/Extensions/RawRepresentable.swift
+Pods/Argo/Sources/Argo/Functions/catDecoded.swift
+Pods/Argo/Sources/Argo/Functions/decode.swift
+Pods/Argo/Sources/Argo/Functions/flatReduce.swift
+Pods/Argo/Sources/Argo/Functions/sequence.swift
+Pods/Argo/Sources/Argo/Operators/Argo.swift
+Pods/Argo/Sources/Argo/Operators/DecodeOperators.swift
+Pods/Argo/Sources/Argo/Types/Decodable.swift
+Pods/Argo/Sources/Argo/Types/DecodeError.swift
+Pods/Argo/Sources/Argo/Types/JSON.swift
+Pods/Argo/Sources/Argo/Types/StandardTypes.swift
+Pods/Argo/Sources/Argo/Types/Decoded/Alternative.swift
+Pods/Argo/Sources/Argo/Types/Decoded/Applicative.swift
+Pods/Argo/Sources/Argo/Types/Decoded/Decoded.swift
+Pods/Argo/Sources/Argo/Types/Decoded/FailureCoalescing.swift
+Pods/Argo/Sources/Argo/Types/Decoded/Functor.swift
+Pods/Argo/Sources/Argo/Types/Decoded/Monad.swift
+Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/Argo.xcscheme
+Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/Runes.xcscheme
+Pods/Runes/LICENSE
+Pods/Runes/README.md
+Pods/Runes/Sources/Runes/Runes.swift
+Pods/Runes/Sources/Runes/Array/Array+Alternative.swift
+Pods/Runes/Sources/Runes/Array/Array+Applicative.swift
+Pods/Runes/Sources/Runes/Array/Array+Functor.swift
+Pods/Runes/Sources/Runes/Array/Array+Monad.swift
+Pods/Runes/Sources/Runes/Optional/Optional+Alternative.swift
+Pods/Runes/Sources/Runes/Optional/Optional+Applicative.swift
+Pods/Runes/Sources/Runes/Optional/Optional+Functor.swift
+Pods/Runes/Sources/Runes/Optional/Optional+Monad.swift
+Pods/Target Support Files/Argo/Argo-dummy.m
+Pods/Target Support Files/Argo/Argo-prefix.pch
+Pods/Target Support Files/Argo/Argo-umbrella.h
+Pods/Target Support Files/Argo/Argo.modulemap
+Pods/Target Support Files/Argo/Argo.xcconfig
+Pods/Target Support Files/Argo/Info.plist
+Pods/Target Support Files/Runes/Info.plist
+Pods/Target Support Files/Runes/Runes-dummy.m
+Pods/Target Support Files/Runes/Runes-prefix.pch
+Pods/Target Support Files/Runes/Runes-umbrella.h
+Pods/Target Support Files/Runes/Runes.modulemap
+Pods/Target Support Files/Runes/Runes.xcconfig

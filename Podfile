@@ -6,7 +6,7 @@ target 'KickStarterRxSwift' do
   use_frameworks!
   pod 'RxSwift'
   pod 'RxCocoa'
-
+  pod 'Argo'
   # Pods for KickStarterRxSwift
 
 end
