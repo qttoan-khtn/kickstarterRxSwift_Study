@@ -8,6 +8,22 @@
 
 import Foundation
 
-public final class SignupViewModel {
+public protocol SignupViewModelInputs {
+ 
+}
+
+public protocol SignupViewModelOutputs {
     
+}
+
+public protocol SignupViewModelType {
+    var inputs: SignupViewModelInputs { get }
+    var outputs: SignupViewModelOutputs { get }
+}
+
+public final class SignupViewModel: SignupViewModelType, SignupViewModelInputs, SignupViewModelOutputs {
+    
+    
+  public var inputs: SignupViewModelInputs { return self }
+  public var outputs: SignupViewModelOutputs { return self }
 }

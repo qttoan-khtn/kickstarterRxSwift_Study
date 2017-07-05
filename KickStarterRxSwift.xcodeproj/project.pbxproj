@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889736AC1F0CC2610070E8D1 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889736AB1F0CC2610070E8D1 /* LoginViewModel.swift */; };
+		889736AF1F0CE91E0070E8D1 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889736AE1F0CE91E0070E8D1 /* Parameter.swift */; };
+		889736B11F0CE9640070E8D1 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889736B01F0CE9640070E8D1 /* Requestable.swift */; };
+		889736B31F0CEDA10070E8D1 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889736B21F0CEDA10070E8D1 /* SearchRequest.swift */; };
+		889736B61F0CEEAE0070E8D1 /* SearchObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889736B51F0CEEAE0070E8D1 /* SearchObj.swift */; };
 		88A2495B1F0B8CF90078BCB0 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2495A1F0B8CF90078BCB0 /* SignupViewModel.swift */; };
 		88E8B92B1F0A3FD5002F1D3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B92A1F0A3FD5002F1D3F /* AppDelegate.swift */; };
 		88E8B92D1F0A3FD5002F1D3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B92C1F0A3FD5002F1D3F /* ViewController.swift */; };
@@ -21,6 +26,11 @@
 
 /* Begin PBXFileReference section */
 		7AD410A2F06782182BE99B52 /* Pods-KickStarterRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickStarterRxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KickStarterRxSwift/Pods-KickStarterRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		889736AB1F0CC2610070E8D1 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		889736AE1F0CE91E0070E8D1 /* Parameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		889736B01F0CE9640070E8D1 /* Requestable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		889736B21F0CEDA10070E8D1 /* SearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		889736B51F0CEEAE0070E8D1 /* SearchObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchObj.swift; sourceTree = "<group>"; };
 		88A2495A1F0B8CF90078BCB0 /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
 		88E8B9271F0A3FD5002F1D3F /* KickStarterRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KickStarterRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E8B92A1F0A3FD5002F1D3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +67,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		889736AD1F0CE8E80070E8D1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				889736AE1F0CE91E0070E8D1 /* Parameter.swift */,
+				889736B01F0CE9640070E8D1 /* Requestable.swift */,
+				889736B21F0CEDA10070E8D1 /* SearchRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		889736B41F0CEE970070E8D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				889736B51F0CEEAE0070E8D1 /* SearchObj.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		88A249591F0B8CF90078BCB0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				889736AB1F0CC2610070E8D1 /* LoginViewModel.swift */,
 				88A2495A1F0B8CF90078BCB0 /* SignupViewModel.swift */,
 			);
 			path = ViewModels;
@@ -101,6 +130,8 @@
 		88E8B93D1F0A4EBA002F1D3F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				889736B41F0CEE970070E8D1 /* Models */,
+				889736AD1F0CE8E80070E8D1 /* Networking */,
 				88A249591F0B8CF90078BCB0 /* ViewModels */,
 			);
 			path = Shared;
@@ -117,9 +148,9 @@
 		88E8B93F1F0A4EBA002F1D3F /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				88E8B9501F0A575B002F1D3F /* Authentication.storyboard */,
 				88E8B9401F0A4EE9002F1D3F /* LaunchScreen.storyboard */,
 				88E8B9411F0A4EE9002F1D3F /* Main.storyboard */,
-				88E8B9501F0A575B002F1D3F /* Authentication.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -283,9 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E8B92D1F0A3FD5002F1D3F /* ViewController.swift in Sources */,
+				889736B11F0CE9640070E8D1 /* Requestable.swift in Sources */,
 				88A2495B1F0B8CF90078BCB0 /* SignupViewModel.swift in Sources */,
+				889736AC1F0CC2610070E8D1 /* LoginViewModel.swift in Sources */,
 				88E8B9471F0A4F5A002F1D3F /* RootTabBarViewController.swift in Sources */,
+				889736B61F0CEEAE0070E8D1 /* SearchObj.swift in Sources */,
 				88E8B94A1F0A4FA1002F1D3F /* SignupViewController.swift in Sources */,
+				889736AF1F0CE91E0070E8D1 /* Parameter.swift in Sources */,
+				889736B31F0CEDA10070E8D1 /* SearchRequest.swift in Sources */,
 				88E8B92B1F0A3FD5002F1D3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

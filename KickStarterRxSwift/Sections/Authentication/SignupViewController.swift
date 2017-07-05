@@ -7,13 +7,24 @@
 //
 
 import UIKit
+import RxSwift
 
 class SignupViewController: UIViewController {
 
+  let disposeBag = DisposeBag()
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      let param = SearchParam()
+      
+      SearchRequest(param)
+        .toObservable()
+        .subscribe(onNext: { results in
+          print(results)
+        }).addDisposableTo(disposeBag)
+      
     }
 
     override func didReceiveMemoryWarning() {
