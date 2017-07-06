@@ -5,10 +5,10 @@
 inhibit_all_warnings!
 
 def important_pods
-  pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Argo'
+  pod 'Alamofire'
 end
 
 target 'KickStarterRxSwift' do

@@ -35,6 +35,12 @@ open class SearchRequest: Requestable {
   var param: Parameter? { return self._param }
   fileprivate var _param: SearchParam
   
+  // Task
+  var task: Task {
+    return .upload(.multipart([MultipartFormData(provider: .data(Data(count: 0)), name: "file", fileName: "name",
+                                                 mimeType: "image/jpeg")]))
+  }
+  
   // MARK: - Init
   init(_ param: SearchParam) {
     self._param = param

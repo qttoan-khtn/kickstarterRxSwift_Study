@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "889679E21F0DEDD9007C8D43"
+               BuildableName = "KickStarterRxSwiftTests.xctest"
+               BlueprintName = "KickStarterRxSwiftTests"
+               ReferencedContainer = "container:KickStarterRxSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
