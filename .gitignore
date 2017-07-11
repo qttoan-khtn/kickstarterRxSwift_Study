@@ -350,3 +350,13 @@ Pods/Target Support Files/Alamofire/Alamofire-umbrella.h
 Pods/Target Support Files/Alamofire/Alamofire.modulemap
 Pods/Target Support Files/Alamofire/Alamofire.xcconfig
 Pods/Target Support Files/Alamofire/Info.plist
+Pods/Curry/LICENSE
+Pods/Curry/README.md
+Pods/Curry/Source/Curry.swift
+Pods/Pods.xcodeproj/xcuserdata/imac.xcuserdatad/xcschemes/Curry.xcscheme
+Pods/Target Support Files/Curry/Curry-dummy.m
+Pods/Target Support Files/Curry/Curry-prefix.pch
+Pods/Target Support Files/Curry/Curry-umbrella.h
+Pods/Target Support Files/Curry/Curry.modulemap
+Pods/Target Support Files/Curry/Curry.xcconfig
+Pods/Target Support Files/Curry/Info.plist

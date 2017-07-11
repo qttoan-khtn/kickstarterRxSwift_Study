@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import Argo
 
 public struct SearchParam: Parameter {
   
@@ -23,7 +24,7 @@ open class SearchRequest: Requestable {
   typealias Element = [SearchObj]
   
   // Base
-  var basePath: String { return "https://www.googleapis.com/youtube/v3" }
+  var basePath: String { return Environment.serverConfig.apiBaseUrlStr }
   
   // Endpoint
   var endpoint: String { return "/search" }
@@ -51,9 +52,7 @@ open class SearchRequest: Requestable {
     guard let result = data as? [String: Any] else {
       return []
     }
-    guard let places = result["results"] as? [[String: Any]] else {
-      return []
-    }
-    return []//Mapper<SearchObj>().mapArray(JSONArray: places)
+    
+    return Argo.decode(result, rootKey: "items")
   }
 }

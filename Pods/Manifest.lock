@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.5.0)
   - Argo (4.1.2):
     - Runes (>= 4.0.0)
+  - Curry (3.0.0)
   - Runes (4.1.0)
   - RxCocoa (3.5.0):
     - RxSwift (~> 3.4)
@@ -10,16 +11,18 @@ PODS:
 DEPENDENCIES:
   - Alamofire
   - Argo
+  - Curry
   - RxCocoa
   - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Argo: 5db06502fc1222d83011f574243089dab25202ff
+  Curry: eb3d2c75aec678b3cc7fb2729d2ad6dd121531d1
   Runes: 72a67a5bbbe1b5fdae08b5a01b10c60d83fc69aa
   RxCocoa: a0a09f45d0e5b48ecb6a4a7b4b4c89c88d3f633f
   RxSwift: 18ee9d78b45edb3b0b7e79916b47a116e6dbc842
 
-PODFILE CHECKSUM: e5a679a96da0d307d016d398f0e5af7e5d1c4dbb
+PODFILE CHECKSUM: 9a4c2a3f5470d7d4f896a7adff8b44e94c4bbc8d
 
 COCOAPODS: 1.2.1

@@ -7,7 +7,18 @@
 //
 
 import Foundation
+import Argo
+import Runes
+import Curry
 
-class SearchObj {
-  
+struct SearchObj {
+  let id: String
 }
+
+extension SearchObj: Decodable {
+  static func decode(_ json: JSON) -> Decoded<SearchObj> {
+    return curry(SearchObj.init)
+      <^> json <| "id"
+  }
+}
+

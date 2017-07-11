@@ -77,18 +77,16 @@ extension Requestable {
         case let .upload(uploadType):
           switch uploadType {
             case let .multipart(multipartBody):
-              self.upload(multipartBody, urlRequest: urlRequest)
-            break
-          
-            default: break
+              self.upload(multipartBody, urlRequest: urlRequest, observer: observer)
+           
+            case let .file(fileURL):
+              self.uploadFile(fileURL, urlRequest: urlRequest, observer: observer)
           }
-        break
         
         case .download:
+          
         break
       }
-      
-      
       
       return Disposables.create()
     }
@@ -117,12 +115,13 @@ extension Requestable {
     return request
   }
   
-  /// Request
+  /// Request => build normal request GET/POST
   private func request(_ urlRequest: URLRequest, observer: AnyObserver<Element>) {
     Alamofire.request(urlRequest)
       .validate(contentType: ["application/json"])
       .responseJSON(completionHandler: { (response) in
         print(response)
+        
         // Check error
         if let error = response.result.error {
           
@@ -168,8 +167,10 @@ extension Requestable {
       })
   }
   
-  /// Upload
-  private func upload(_ multipartBody: [MultipartFormData], urlRequest: URLRequest) {
+  /// Upload data to server
+  /// multipartBody: list multipart files
+  ///
+  private func upload(_ multipartBody: [MultipartFormData], urlRequest: URLRequest, observer: AnyObserver<Element>) {
     
     let multipartFormData: (Alamofire.MultipartFormData) -> Void = { form in
       for bodyPart in multipartBody {
@@ -196,17 +197,48 @@ extension Requestable {
     
     Alamofire.upload(multipartFormData: multipartFormData,
                      with: urlRequest) { result in
-//                      switch result {
-//                      case .success(let alamoRequest, _, _):
-//                        if cancellable.isCancelled {
-//                          self.cancelCompletion(completion, target: target)
-//                          return
-//                        }
-//                        cancellable.innerCancellable = self.sendAlamofireRequest(alamoRequest, target: target, queue: queue, progress: progress, completion: completion)
-//                      case .failure(let error):
-//                        completion(.failure(MoyaError.underlying(error as NSError)))
-//                      }
-        
+                      switch result {
+                      case .success(let alamoRequest, _, _):
+                        alamoRequest.responseJSON(completionHandler: { (response) in
+                          // Check Response
+                          guard let data = response.result.value else {
+                            observer.onError(NSError.jsonMapperError())
+                            return
+                          }
+                          
+                          // Parse here
+                          guard let result = self.decode(data: data) else {
+                            observer.onError(NSError.jsonMapperError())
+                            return
+                          }
+                          
+                          // Fill
+                          observer.on(.next(result))
+                          observer.on(.completed)
+                        })
+                      case .failure(let error):
+                        observer.onError(error)
+                      }
+    }
+  }
+  
+  private func uploadFile(_ file: URL, urlRequest: URLRequest, observer: AnyObserver<Element>) {
+    Alamofire.upload(file, with: urlRequest).responseJSON { (response) in
+      // Check Response
+      guard let data = response.result.value else {
+        observer.onError(NSError.jsonMapperError())
+        return
+      }
+      
+      // Parse here
+      guard let result = self.decode(data: data) else {
+        observer.onError(NSError.jsonMapperError())
+        return
+      }
+      
+      // Fill
+      observer.on(.next(result))
+      observer.on(.completed)
     }
   }
 }

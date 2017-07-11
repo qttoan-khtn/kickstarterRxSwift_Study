@@ -101,8 +101,8 @@
 		889679E41F0DEDD9007C8D43 /* KickStarterRxSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				889679E51F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift */,
 				889679E71F0DEDD9007C8D43 /* Info.plist */,
+				889679E51F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift */,
 			);
 			path = KickStarterRxSwiftTests;
 			sourceTree = "<group>";
@@ -110,8 +110,8 @@
 		88967A001F0E17C4007C8D43 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				88967A011F0E17D7007C8D43 /* ServerConfig.swift */,
 				88967A051F0E28FE007C8D43 /* Environment.swift */,
+				88967A011F0E17D7007C8D43 /* ServerConfig.swift */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -127,10 +127,10 @@
 		88967A0C1F0E2D3F007C8D43 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				88967A111F0E2D53007C8D43 /* MultipartFormData.swift */,
 				88967A0D1F0E2D3F007C8D43 /* Parameter.swift */,
 				88967A0E1F0E2D3F007C8D43 /* Requestable.swift */,
 				88967A131F0E341C007C8D43 /* TargetType.swift */,
-				88967A111F0E2D53007C8D43 /* MultipartFormData.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -138,8 +138,8 @@
 		889736AD1F0CE8E80070E8D1 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				88967A0C1F0E2D3F007C8D43 /* Core */,
 				88967A001F0E17C4007C8D43 /* Configurations */,
+				88967A0C1F0E2D3F007C8D43 /* Core */,
 				889736B21F0CEDA10070E8D1 /* SearchRequest.swift */,
 			);
 			path = Networking;
@@ -165,9 +165,9 @@
 		88E8B91E1F0A3FD5002F1D3F = {
 			isa = PBXGroup;
 			children = (
+				86E5A7A53A4196C53307B6A6 /* Frameworks */,
 				88E8B9291F0A3FD5002F1D3F /* KickStarterRxSwift */,
 				889679E41F0DEDD9007C8D43 /* KickStarterRxSwiftTests */,
-				86E5A7A53A4196C53307B6A6 /* Frameworks */,
 				EC49A322B20C4E465CB904B0 /* Pods */,
 				88E8B9281F0A3FD5002F1D3F /* Products */,
 				88E8B93C1F0A4732002F1D3F /* KickstarterRxSwift.playground */,

@@ -8,6 +8,7 @@ def important_pods
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'Argo'
+  pod 'Curry'
   pod 'Alamofire'
 end
 
