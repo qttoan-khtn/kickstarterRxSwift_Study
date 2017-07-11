@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		880114061F14C13B007CC2CD /* Requestable+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880114051F14C13B007CC2CD /* Requestable+Alamofire.swift */; };
+		880114081F14D509007CC2CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880114071F14D509007CC2CD /* LoginViewController.swift */; };
 		889679E61F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889679E51F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift */; };
 		88967A021F0E17D7007C8D43 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88967A011F0E17D7007C8D43 /* ServerConfig.swift */; };
 		88967A061F0E28FE007C8D43 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88967A051F0E28FE007C8D43 /* Environment.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		7AD410A2F06782182BE99B52 /* Pods-KickStarterRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickStarterRxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KickStarterRxSwift/Pods-KickStarterRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		880114051F14C13B007CC2CD /* Requestable+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Requestable+Alamofire.swift"; sourceTree = "<group>"; };
+		880114071F14D509007CC2CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		889679E31F0DEDD9007C8D43 /* KickStarterRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KickStarterRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889679E51F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickStarterRxSwiftTests.swift; sourceTree = "<group>"; };
 		889679E71F0DEDD9007C8D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 				88967A0D1F0E2D3F007C8D43 /* Parameter.swift */,
 				88967A0E1F0E2D3F007C8D43 /* Requestable.swift */,
 				88967A131F0E341C007C8D43 /* TargetType.swift */,
+				880114051F14C13B007CC2CD /* Requestable+Alamofire.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				88E8B9491F0A4FA1002F1D3F /* SignupViewController.swift */,
+				880114071F14D509007CC2CD /* LoginViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -436,7 +442,9 @@
 				88E8B94A1F0A4FA1002F1D3F /* SignupViewController.swift in Sources */,
 				88967A0B1F0E29E6007C8D43 /* Constants.swift in Sources */,
 				88967A101F0E2D3F007C8D43 /* Requestable.swift in Sources */,
+				880114081F14D509007CC2CD /* LoginViewController.swift in Sources */,
 				889736B31F0CEDA10070E8D1 /* SearchRequest.swift in Sources */,
+				880114061F14C13B007CC2CD /* Requestable+Alamofire.swift in Sources */,
 				88E8B92B1F0A3FD5002F1D3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,6 +617,7 @@
 				889679EB1F0DEDD9007C8D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88E8B9221F0A3FD5002F1D3F /* Build configuration list for PBXProject "KickStarterRxSwift" */ = {
 			isa = XCConfigurationList;

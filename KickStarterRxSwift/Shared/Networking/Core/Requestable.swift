@@ -83,8 +83,9 @@ extension Requestable {
               self.uploadFile(fileURL, urlRequest: urlRequest, observer: observer)
           }
         
-        case .download:
-          
+        case .download(.request(let destination)):
+          self.download(destination, urlRequest: urlRequest, observer: observer)
+        
         break
       }
       
@@ -240,6 +241,18 @@ extension Requestable {
       observer.on(.next(result))
       observer.on(.completed)
     }
+  }
+  
+  private func download(_ destination: DownloadDestination, urlRequest: URLRequest, observer: AnyObserver<Element>) {
+    
+    
+    
+    //Alamofire.download(urlRequest, to: destination).response {
+    //}
+    // Alamofire 3
+//    let destination2 = DownloadRequest.suggestedDownloadDestination()
+//
+
   }
 }
 

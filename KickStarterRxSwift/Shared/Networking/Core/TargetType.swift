@@ -18,7 +18,7 @@ public enum Task {
   case upload(UploadType)
   
   /// A download task.
-  case download//(DownloadType)
+  case download(DownloadType)
 }
 
 public enum UploadType {
@@ -27,4 +27,10 @@ public enum UploadType {
   
   /// Upload "multipart/form-data"
   case multipart([MultipartFormData])
+}
+
+public enum DownloadType {
+  
+  /// Download a file to a destination
+  case request(DownloadDestination)
 }
