@@ -1,6 +1,7 @@
 import Foundation
 import RxSwift
 import Alamofire
+import Argo
 
 protocol Requestable: URLRequestConvertible {
   
@@ -44,7 +45,7 @@ extension Requestable {
   
   var addionalHeader: HeaderParameter? { return nil }
   
-  var defaultHeader: HeaderParameter { return ["Accept": "application/json", "Accept-Language": "en_US"] }
+  var defaultHeader: HeaderParameter { return [:] } //["Accept": "application/json", "Accept-Language": "en_US"]
   
   var urlPath: String { return basePath + endpoint }
   
@@ -150,21 +151,39 @@ extension Requestable {
           return
         }
         
-        // Check Response
-        guard let data = response.result.value else {
-          observer.onError(NSError.jsonMapperError())
-          return
+        if response.response?.statusCode == 200 {
+          // Check Response
+          guard let data = response.result.value else {
+            observer.onError(NSError.jsonMapperError())
+            return
+          }
+          
+          // Parse here
+          guard let result = self.decode(data: data) else {
+            observer.onError(NSError.jsonMapperError())
+            return
+          }
+          
+          // Fill
+          observer.on(.next(result))
+          observer.on(.completed)
+          
+        } else {
+          // Check Response
+          guard let data = response.result.value else {
+            observer.onError(NSError.jsonMapperError())
+            return
+          }
+          
+          guard let result = data as? [String: Any] else {
+            observer.onError(NSError.jsonMapperError())
+            return
+          }
+          
+          // Parse here
+          let error: Decoded<ErrorResponseObj> = Argo.decode(result)
+          observer.onError(NSError.errorWithMessage((error.value?.message)!))
         }
-        
-        // Parse here
-        guard let result = self.decode(data: data) else {
-          observer.onError(NSError.jsonMapperError())
-          return
-        }
-        
-        // Fill
-        observer.on(.next(result))
-        observer.on(.completed)
       })
   }
   
@@ -292,6 +311,11 @@ extension NSError {
   static func jsonMapperError() -> NSError {
     let userInfo = [NSLocalizedDescriptionKey: "JSON Mapper error"]
     return NSError(domain: "com.fe.titan.defaultError", code: 998, userInfo: userInfo)
+  }
+  
+  static func errorWithMessage(_ message: String) -> NSError {
+    let userInfo = [NSLocalizedDescriptionKey: message]
+    return NSError(domain: "com.fe.titan.defaultError", code: 997, userInfo: userInfo)
   }
 }
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		880114061F14C13B007CC2CD /* Requestable+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880114051F14C13B007CC2CD /* Requestable+Alamofire.swift */; };
 		880114081F14D509007CC2CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880114071F14D509007CC2CD /* LoginViewController.swift */; };
+		880B71D21F161F6E003D3A82 /* ErrorResponseObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880B71D11F161F6E003D3A82 /* ErrorResponseObj.swift */; };
 		889679E61F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889679E51F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift */; };
 		88967A021F0E17D7007C8D43 /* ServerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88967A011F0E17D7007C8D43 /* ServerConfig.swift */; };
 		88967A061F0E28FE007C8D43 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88967A051F0E28FE007C8D43 /* Environment.swift */; };
@@ -29,6 +30,8 @@
 		88E8B9471F0A4F5A002F1D3F /* RootTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B9461F0A4F5A002F1D3F /* RootTabBarViewController.swift */; };
 		88E8B94A1F0A4FA1002F1D3F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E8B9491F0A4FA1002F1D3F /* SignupViewController.swift */; };
 		88E8B9511F0A575B002F1D3F /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88E8B9501F0A575B002F1D3F /* Authentication.storyboard */; };
+		88ED8EBE1F16083E00569E0A /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED8EBD1F16083E00569E0A /* LoginRequest.swift */; };
+		88ED8EC01F160C1700569E0A /* TokenObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88ED8EBF1F160C1700569E0A /* TokenObj.swift */; };
 		EAE2E798922ADF7318B31E3E /* Pods_KickStarterRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA321D1D02D2F5A794BFB537 /* Pods_KickStarterRxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +49,7 @@
 		7AD410A2F06782182BE99B52 /* Pods-KickStarterRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickStarterRxSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KickStarterRxSwift/Pods-KickStarterRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		880114051F14C13B007CC2CD /* Requestable+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Requestable+Alamofire.swift"; sourceTree = "<group>"; };
 		880114071F14D509007CC2CD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		880B71D11F161F6E003D3A82 /* ErrorResponseObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorResponseObj.swift; sourceTree = "<group>"; };
 		889679E31F0DEDD9007C8D43 /* KickStarterRxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KickStarterRxSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889679E51F0DEDD9007C8D43 /* KickStarterRxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KickStarterRxSwiftTests.swift; sourceTree = "<group>"; };
 		889679E71F0DEDD9007C8D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		88E8B9461F0A4F5A002F1D3F /* RootTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarViewController.swift; sourceTree = "<group>"; };
 		88E8B9491F0A4FA1002F1D3F /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		88E8B9501F0A575B002F1D3F /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		88ED8EBD1F16083E00569E0A /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		88ED8EBF1F160C1700569E0A /* TokenObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenObj.swift; sourceTree = "<group>"; };
 		D8BB36B8E0B9DA289AD12CEA /* Pods-KickStarterRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KickStarterRxSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-KickStarterRxSwift/Pods-KickStarterRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DA321D1D02D2F5A794BFB537 /* Pods_KickStarterRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KickStarterRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,9 +139,9 @@
 			children = (
 				88967A111F0E2D53007C8D43 /* MultipartFormData.swift */,
 				88967A0D1F0E2D3F007C8D43 /* Parameter.swift */,
+				880114051F14C13B007CC2CD /* Requestable+Alamofire.swift */,
 				88967A0E1F0E2D3F007C8D43 /* Requestable.swift */,
 				88967A131F0E341C007C8D43 /* TargetType.swift */,
-				880114051F14C13B007CC2CD /* Requestable+Alamofire.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 				88967A001F0E17C4007C8D43 /* Configurations */,
 				88967A0C1F0E2D3F007C8D43 /* Core */,
 				889736B21F0CEDA10070E8D1 /* SearchRequest.swift */,
+				88ED8EBD1F16083E00569E0A /* LoginRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -154,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				889736B51F0CEEAE0070E8D1 /* SearchObj.swift */,
+				88ED8EBF1F160C1700569E0A /* TokenObj.swift */,
+				880B71D11F161F6E003D3A82 /* ErrorResponseObj.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				88967A071F0E29BB007C8D43 /* Constants */,
+				88ED8EBC1F15E47400569E0A /* Extensions */,
 				889736B41F0CEE970070E8D1 /* Models */,
 				889736AD1F0CE8E80070E8D1 /* Networking */,
 				88A249591F0B8CF90078BCB0 /* ViewModels */,
@@ -251,10 +261,17 @@
 		88E8B9481F0A4F85002F1D3F /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				88E8B9491F0A4FA1002F1D3F /* SignupViewController.swift */,
 				880114071F14D509007CC2CD /* LoginViewController.swift */,
+				88E8B9491F0A4FA1002F1D3F /* SignupViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		88ED8EBC1F15E47400569E0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EC49A322B20C4E465CB904B0 /* Pods */ = {
@@ -434,10 +451,12 @@
 				88E8B92D1F0A3FD5002F1D3F /* ViewController.swift in Sources */,
 				88967A121F0E2D53007C8D43 /* MultipartFormData.swift in Sources */,
 				88A2495B1F0B8CF90078BCB0 /* SignupViewModel.swift in Sources */,
+				880B71D21F161F6E003D3A82 /* ErrorResponseObj.swift in Sources */,
 				88967A0F1F0E2D3F007C8D43 /* Parameter.swift in Sources */,
 				889736AC1F0CC2610070E8D1 /* LoginViewModel.swift in Sources */,
 				88E8B9471F0A4F5A002F1D3F /* RootTabBarViewController.swift in Sources */,
 				889736B61F0CEEAE0070E8D1 /* SearchObj.swift in Sources */,
+				88ED8EBE1F16083E00569E0A /* LoginRequest.swift in Sources */,
 				88967A061F0E28FE007C8D43 /* Environment.swift in Sources */,
 				88E8B94A1F0A4FA1002F1D3F /* SignupViewController.swift in Sources */,
 				88967A0B1F0E29E6007C8D43 /* Constants.swift in Sources */,
@@ -445,6 +464,7 @@
 				880114081F14D509007CC2CD /* LoginViewController.swift in Sources */,
 				889736B31F0CEDA10070E8D1 /* SearchRequest.swift in Sources */,
 				880114061F14C13B007CC2CD /* Requestable+Alamofire.swift in Sources */,
+				88ED8EC01F160C1700569E0A /* TokenObj.swift in Sources */,
 				88E8B92B1F0A3FD5002F1D3F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

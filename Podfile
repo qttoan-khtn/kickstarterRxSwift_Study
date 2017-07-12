@@ -10,6 +10,7 @@ def important_pods
   pod 'Argo'
   pod 'Curry'
   pod 'Alamofire'
+  pod 'IQKeyboardManagerSwift'
 end
 
 target 'KickStarterRxSwift' do

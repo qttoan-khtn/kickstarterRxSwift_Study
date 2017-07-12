@@ -17,6 +17,7 @@ public func == (lhs: ServerConfigType, rhs: ServerConfigType) -> Bool {
 }
 
 public struct ServerConfig: ServerConfigType {
+  
   public let apiBaseUrlStr: String
   
   public static let production: ServerConfigType = ServerConfig(apiBaseUrlStr: Constants.API.ProductionUrlStr)

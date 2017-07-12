@@ -17,12 +17,14 @@ class LoginViewController: UIViewController {
   
   @IBOutlet weak var usernameTextfield: UITextField!
   @IBOutlet weak var passwordTextfield: UITextField!
+  @IBOutlet weak var loginButton: UIButton!
+  @IBOutlet weak var forgotButton: UIButton!
   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      rxBinding()
+      bindToRx()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,9 +43,11 @@ class LoginViewController: UIViewController {
     }
     */
 
-  func rxBinding() {
+  func bindToRx() {
     usernameTextfield.rx.text.bind(to: viewModel.inputs.username).addDisposableTo(disposeBag)
     passwordTextfield.rx.text.bind(to: viewModel.inputs.password).addDisposableTo(disposeBag)
-    //viewModel.inputs.isValid.bind(to: <#T##(Observable<Bool>) -> R#>)
+    loginButton.rx.tap.bind(to: viewModel.inputs.buttonPressed).addDisposableTo(disposeBag)
+    viewModel.outputs.isValid.bind(to: loginButton.rx.isEnabled).addDisposableTo(disposeBag)
   }
+  
 }
